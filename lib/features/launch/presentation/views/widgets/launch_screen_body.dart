@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_bookly/features/launch/presentation/views/widgets/sliding_text.dart';
-import 'package:get/get.dart';
 import '../../../../../constants.dart';
+import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/assets.dart';
 import '../../../../home/presentation/views/home_screen.dart';
 
@@ -57,7 +58,8 @@ class _LaunchScreenBodyState extends State<LaunchScreenBody>
 
   void navigateToHome() {
     Future.delayed(kTransitionDuration, () {
-      Get.off(() => const HomeScreen(), transition: Transition.fade);
+      // Get.off(() => const HomeScreen(), transition: Transition.fade);
+      GoRouter.of(context).pushReplacement(AppRouter.kHomeScreen);
     });
   }
 }
