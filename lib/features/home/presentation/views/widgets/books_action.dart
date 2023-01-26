@@ -27,7 +27,7 @@ class BooksAction extends StatelessWidget {
               text: 'Free Preview',
               backgroundColor: Color(0xFFEf8262),
               textColor: Colors.white,
-              fontSize: 16,
+              fontSize: 14,
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(12),
                 bottomRight: Radius.circular(12),
