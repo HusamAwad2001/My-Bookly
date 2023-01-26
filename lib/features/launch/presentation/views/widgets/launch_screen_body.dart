@@ -4,7 +4,6 @@ import 'package:my_bookly/features/launch/presentation/views/widgets/sliding_tex
 import '../../../../../constants.dart';
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/assets.dart';
-import '../../../../home/presentation/views/home_screen.dart';
 
 class LaunchScreenBody extends StatefulWidget {
   const LaunchScreenBody({Key? key}) : super(key: key);
